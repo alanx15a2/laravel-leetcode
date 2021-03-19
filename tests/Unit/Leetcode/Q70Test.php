@@ -16,7 +16,7 @@ class Q70Test extends TestCase
      *
      * @return void
      */
-    public function test_climb_math($stair, $ans)
+    public function test_q70_math($stair, $ans)
     {
         $myAns = ((sqrt(5) / 5)) * ((((1+sqrt(5)) / 2) ** ($stair+1)) - (((1-sqrt(5)) / 2) ** ($stair+1)));
         $myAns = floor($myAns);
@@ -30,7 +30,7 @@ class Q70Test extends TestCase
      *
      * @return void
      */
-    public function test_climb_dynamic($stair, $ans)
+    public function test_q70_dynamic($stair, $ans)
     {
         $myAns = $this->climb_dynamic($stair);
         $this->assertEquals($ans, $myAns);
@@ -59,7 +59,7 @@ class Q70Test extends TestCase
      *
      * @return void
      */
-    public function test_climb_recursion($stair, $ans)
+    public function test_q70_recursion($stair, $ans)
     {
         $myAns = $this->climb_recursion($stair+1);
         $this->assertEquals($ans, $myAns);
